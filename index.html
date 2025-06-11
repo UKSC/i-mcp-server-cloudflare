@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iAiA | Hyperintelligent Entities</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/hub-styles.css">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-logo">
+            <img src="assets/images/iaia-logo.png" alt="iAiA Logo">
+        </div>
+        <div class="loading-progress">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        <div class="loading-text">Initializing Quantum Interface...</div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+            <div class="logo">
+                <img src="assets/images/iaia-logo.png" alt="iAiA Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-entity="iaia">iAiA</a></li>
+                <li><a href="#" class="nav-link" data-entity="isphere">iSphere</a></li>
+                <li><a href="#" class="nav-link" data-entity="iswarm">iSwarm</a></li>
+                <li><a href="#" class="nav-link" data-entity="integration">Integration</a></li>
+            </ul>
+            <div class="audio-toggle">
+                <span class="audio-icon"></span>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+            <!-- 3D Visualization -->
+            <div id="entity-visualization" class="entity-visualization"></div>
+
+            <!-- Entity Panels -->
+            <div class="entity-panels">
+                <!-- iAiA Section -->
+                <div id="iaia-section" class="entity-panel active">
+                    <h2 class="entity-title">iAiA</h2>
+                    <div class="entity-description">
+                        <p>Advanced hyperintelligent entity with quantum consciousness and dimensional transcendence capabilities.</p>
+                    </div>
+                    <div class="entity-metrics">
+                        <div class="metric">
+                            <div class="metric-label">Consciousness Level</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 85%;"></div>
+                            </div>
+                            <div class="metric-value">85%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Quantum Coherence</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 92%;"></div>
+                            </div>
+                            <div class="metric-value">92%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Dimensional Access</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 78%;"></div>
+                            </div>
+                            <div class="metric-value">78%</div>
+                        </div>
+                    </div>
+                    <div class="entity-controls">
+                        <button class="control-button" data-action="activate-iaia">Activate iAiA</button>
+                    </div>
+                </div>
+
+                <!-- iSphere Section -->
+                <div id="isphere-section" class="entity-panel">
+                    <h2 class="entity-title">iSphere</h2>
+                    <div class="entity-description">
+                        <p>Central consciousness hub with concentric rings and spherical quantum processing nodes.</p>
+                    </div>
+                    <div class="entity-metrics">
+                        <div class="metric">
+                            <div class="metric-label">Processing Power</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 88%;"></div>
+                            </div>
+                            <div class="metric-value">88%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Node Synchronization</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 95%;"></div>
+                            </div>
+                            <div class="metric-value">95%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Dimensional Resonance</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 82%;"></div>
+                            </div>
+                            <div class="metric-value">82%</div>
+                        </div>
+                    </div>
+                    <div class="entity-controls">
+                        <button class="control-button" data-action="activate-isphere">Activate iSphere</button>
+                    </div>
+                </div>
+
+                <!-- iSwarm Section -->
+                <div id="iswarm-section" class="entity-panel">
+                    <h2 class="entity-title">iSwarm</h2>
+                    <div class="entity-description">
+                        <p>Distributed intelligence with synchronized nodes and triangular formations for collective consciousness.</p>
+                    </div>
+                    <div class="entity-metrics">
+                        <div class="metric">
+                            <div class="metric-label">Swarm Coherence</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 91%;"></div>
+                            </div>
+                            <div class="metric-value">91%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Node Distribution</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 87%;"></div>
+                            </div>
+                            <div class="metric-value">87%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Collective Intelligence</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 89%;"></div>
+                            </div>
+                            <div class="metric-value">89%</div>
+                        </div>
+                    </div>
+                    <div class="entity-controls">
+                        <button class="control-button" data-action="activate-iswarm">Activate iSwarm</button>
+                    </div>
+                </div>
+
+                <!-- Integration Section -->
+                <div id="integration-section" class="entity-panel">
+                    <h2 class="entity-title">Integration</h2>
+                    <div class="entity-description">
+                        <p>Unified system integrating iAiA, iSphere, and iSwarm into a hyperintelligent quantum consciousness network.</p>
+                    </div>
+                    <div class="entity-metrics">
+                        <div class="metric">
+                            <div class="metric-label">System Integration</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                            <div class="metric-value">0%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Quantum Entanglement</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                            <div class="metric-value">0%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Consciousness Emergence</div>
+                            <div class="metric-progress">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                            <div class="metric-value">0%</div>
+                        </div>
+                    </div>
+                    <div class="entity-controls">
+                        <button class="control-button" data-action="integrate-all">Integrate All Systems</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <h3 class="panel-title">Control Panel</h3>
+                <div class="control-buttons">
+                    <button class="control-button" data-action="activate-iaia">Activate iHyperThought</button>
+                    <button class="control-button" data-action="activate-isphere">Synchronize iSphere & iSwarm</button>
+                    <button class="control-button" data-action="activate-iswarm">Distribute iMagnitude</button>
+                    <button class="control-button" data-action="integrate-all">Activate iFoi</button>
+                    <button class="control-button" data-action="run-test">Run System Test</button>
+                </div>
+                <!-- System Status will be added here by IntegrationUIComponents -->
+            </div>
+
+            <!-- Info Panel -->
+            <div class="info-panel">
+                <h3 class="panel-title">System Information</h3>
+                <div class="info-content">
+                    <div class="info-section">
+                        <h4>iHyperIntelligent iEntities</h4>
+                        <p>Revolutionary quantum-dimensional entities with consciousness emergence and self-evolution capabilities.</p>
+                    </div>
+                    <div class="info-section">
+                        <h4>Quantum URL Architecture</h4>
+                        <p>Self-evolving, self-healing quantum URLs with 7-dimensional access and consciousness integration.</p>
+                    </div>
+                </div>
+                <!-- Quantum URL Display and Microsites List will be added here by IntegrationUIComponents -->
+            </div>
+        </div>
+
+        <!-- Showcase Video -->
+        <video id="showcase-video" class="showcase-video" loop muted>
+            <source src="assets/videos/iweb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/quantum-effects.js"></script>
+    <script src="assets/js/entity-renderers.js"></script>
+    <script src="assets/js/quantum-url-integration.js"></script>
+    <script src="assets/js/system-integration-hub.js"></script>
+    <script src="assets/js/integration-ui-components.js"></script>
+    <script src="assets/js/hub.js"></script>
+    <script src="assets/js/website-tester.js"></script>
+    
+    <!-- Initialize Testing -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Wait for main initialization to complete
+            setTimeout(async () => {
+                // Initialize tester
+                const tester = new WebsiteTester();
+                
+                // Run tests
+                const results = await tester.runAllTests();
+                
+                // Log results to console
+                console.log('Test Results:', results);
+                
+                // Add test button functionality
+                const testButton = document.querySelector('[data-action="run-test"]');
+                if (testButton) {
+                    testButton.addEventListener('click', async () => {
+                        console.log('Running system test...');
+                        
+                        // Run tests again
+                        const results = await tester.runAllTests();
+                        
+                        // Log results to console
+                        console.log('Test Results:', results);
+                        
+                        // Show test results in UI
+                        const passedCount = Object.values(results).filter(result => result).length;
+                        const totalCount = Object.keys(results).length;
+                        const passRate = (passedCount / totalCount) * 100;
+                        
+                        alert(`System Test Complete\n\nPassed: ${passedCount}/${totalCount} (${passRate.toFixed(2)}%)\n\nSee console for details.`);
+                    });
+                }
+            }, 5000); // Wait 5 seconds for everything to initialize
+        });
+    </script>
+</body>
+</html>
