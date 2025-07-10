@@ -1,5 +1,35 @@
 # docs-vectorize
 
+## 0.3.2
+
+### Patch Changes
+
+- 7422e71: Update MCP sdk
+- Updated dependencies [7422e71]
+  - @repo/mcp-observability@0.32.2
+  - @repo/mcp-common@0.19.1
+
+## 0.3.1
+
+### Patch Changes
+
+- cc6d41f: Update agents deps & modelcontextprotocol
+- Updated dependencies [1833c6d]
+- Updated dependencies [cc6d41f]
+  - @repo/mcp-common@0.19.0
+  - @repo/mcp-observability@0.32.1
+
+## 0.3.0
+
+### Minor Changes
+
+- f885d07: Add search docs tool to bindings and obs servers
+
+### Patch Changes
+
+- Updated dependencies [f885d07]
+  - @repo/mcp-common@0.18.0
+
 ## 0.2.1
 
 ### Patch Changes
